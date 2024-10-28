@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2F8B5E6227C318CF00A0A5E4 /* VGTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B5E6127C318CF00A0A5E4 /* VGTrackApp.swift */; };
-		2F8B5E6427C318CF00A0A5E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B5E6327C318CF00A0A5E4 /* ContentView.swift */; };
 		2F8B5E6627C318D200A0A5E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F8B5E6527C318D200A0A5E4 /* Assets.xcassets */; };
 		2F8B5E6927C318D200A0A5E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F8B5E6827C318D200A0A5E4 /* Preview Assets.xcassets */; };
 		2F8B5E7327C318D200A0A5E4 /* VGTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B5E7227C318D200A0A5E4 /* VGTrackTests.swift */; };
 		2F8B5E7D27C318D300A0A5E4 /* VGTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B5E7C27C318D300A0A5E4 /* VGTrackUITests.swift */; };
 		2F8B5E7F27C318D300A0A5E4 /* VGTrackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B5E7E27C318D300A0A5E4 /* VGTrackUITestsLaunchTests.swift */; };
+		2F8B5EA227C340AB00A0A5E4 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B5EA127C340AB00A0A5E4 /* TabBar.swift */; };
+		2F8B5EA627C3C5BA00A0A5E4 /* PosterCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B5EA527C3C5BA00A0A5E4 /* PosterCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		2F8B5E5E27C318CF00A0A5E4 /* VGTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VGTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8B5E6127C318CF00A0A5E4 /* VGTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGTrackApp.swift; sourceTree = "<group>"; };
-		2F8B5E6327C318CF00A0A5E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F8B5E6527C318D200A0A5E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F8B5E6827C318D200A0A5E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2F8B5E6E27C318D200A0A5E4 /* VGTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VGTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +44,8 @@
 		2F8B5E7827C318D300A0A5E4 /* VGTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VGTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8B5E7C27C318D300A0A5E4 /* VGTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGTrackUITests.swift; sourceTree = "<group>"; };
 		2F8B5E7E27C318D300A0A5E4 /* VGTrackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGTrackUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2F8B5EA127C340AB00A0A5E4 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		2F8B5EA527C3C5BA00A0A5E4 /* PosterCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +97,10 @@
 			isa = PBXGroup;
 			children = (
 				2F8B5E6127C318CF00A0A5E4 /* VGTrackApp.swift */,
-				2F8B5E6327C318CF00A0A5E4 /* ContentView.swift */,
-				2F8B5E6527C318D200A0A5E4 /* Assets.xcassets */,
+				2F8B5EA027C3409900A0A5E4 /* Components */,
+				2F8B5E9527C32C6000A0A5E4 /* Resources */,
+				2F8B5E9027C32B7D00A0A5E4 /* Views */,
+				2F8B5E8B27C32A8100A0A5E4 /* Models */,
 				2F8B5E6727C318D200A0A5E4 /* Preview Content */,
 			);
 			path = VGTrack;
@@ -125,6 +129,37 @@
 				2F8B5E7E27C318D300A0A5E4 /* VGTrackUITestsLaunchTests.swift */,
 			);
 			path = VGTrackUITests;
+			sourceTree = "<group>";
+		};
+		2F8B5E8B27C32A8100A0A5E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F8B5E9027C32B7D00A0A5E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2F8B5E9527C32C6000A0A5E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2F8B5E6527C318D200A0A5E4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2F8B5EA027C3409900A0A5E4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2F8B5EA127C340AB00A0A5E4 /* TabBar.swift */,
+				2F8B5EA527C3C5BA00A0A5E4 /* PosterCollectionView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +292,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F8B5E6427C318CF00A0A5E4 /* ContentView.swift in Sources */,
+				2F8B5EA627C3C5BA00A0A5E4 /* PosterCollectionView.swift in Sources */,
+				2F8B5EA227C340AB00A0A5E4 /* TabBar.swift in Sources */,
 				2F8B5E6227C318CF00A0A5E4 /* VGTrackApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
